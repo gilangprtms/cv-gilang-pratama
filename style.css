@@ -1,0 +1,265 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    
+}
+
+.container {
+    margin: auto;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 0.33fr 1fr;
+    width: 210mm;
+    min-height: 297mm;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.container .sisi-kiri {
+    padding: 40px 20px;
+    padding-left: 20px;
+    background-color: rgb(206, 230, 251);
+    width: 100%;
+    height: 100%;
+    color: #313131;
+}
+
+.container .sisi-kiri .profil {
+    display: inline-flex;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 190px;
+    height: 190px;
+    border-radius: 10%;
+    border: 4px solid #313131;
+    background-image: url("profil.jpg");
+    background-position: center top;
+    background-size: 100%;
+
+}
+
+.kontak h2 {
+    margin-bottom: 10px;
+}
+.kontak div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.kontak a {
+    text-decoration: none;
+    color: rgb(0, 119, 255);
+}
+
+.hard-Skill h2 {
+    margin-bottom: 5px;
+}
+.hard-Skill table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hard-Skill td {
+    padding: 8px 0;
+    border-bottom: 1px solid #000000;
+}
+
+.hard-Skill .table {
+    --bs-table-bg: transparent;
+    --bs-table-striped-bg: transparent;
+    --bs-table-color: rgb(0, 0, 0);
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 1px;
+    border-radius: 50%;
+    background-color: #bdbdbd;
+}
+
+.dot.active {
+    background-color: #313131;
+}
+
+.skill-list h2 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-list span {
+    background: #313131;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.container .sisi-kanan {
+    padding: 10px 20px;
+    padding-right: 75px;
+    color: black;
+}
+
+.container .sisi-kanan .head-title h1 {
+    font-size: 3.1em;
+    margin-top: 20px;
+}
+
+.container .sisi-kanan .desk {
+    display: inline-block;
+    padding: 2px 70px 2px 20px;
+    margin-left: -22px;
+    margin-top: 10px;
+    background-color: rgb(206, 230, 251);
+}
+
+.container .sisi-kanan .tentang .teks-desk {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.container .sisi-kanan .tentang2 .tahun {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.container .sisi-kanan .tentang2 .tahun ul {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.container .sisi-kanan .tentang2 .tahun ul::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -22px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.container .sisi-kanan .tentang2 .tahun ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+.container .sisi-kanan .tentang2 .tahun ul li::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -50px;
+    bottom: -40px;
+    border-left: 2px solid black;
+}
+
+.container .sisi-kanan .tentang2 .tahun ul:last-of-type li::before {
+    content: none;
+}
+
+.container .sisi-kanan .tentang2 .tahun ul li div:last-of-type {
+    color: #000000;
+    font-weight: bold;
+}
+
+.container .sisi-kanan .tentang3 .tahun {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.container .sisi-kanan .tentang3 .tahun > ul {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.container .sisi-kanan .tentang3 .tahun > ul::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -22px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.container .sisi-kanan .tentang3 .tahun > ul > li {
+    list-style-type: none;
+    position: relative;
+}
+
+.container .sisi-kanan .tentang3 .tahun > ul > li::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -50px;
+    bottom: -40px;
+    border-left: 2px solid black;
+}
+
+.container .sisi-kanan .tentang3 .tahun > ul:last-of-type > li::before {
+    content: none;
+}
+
+.container .sisi-kanan .tentang3 .tahun > ul > li div:last-of-type {
+    color: #000000;
+    font-weight: bold;
+}
+
+.tabel-sertifikat {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+.tabel-sertifikat td {
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #313131;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabel-sertifikat img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.tabel-sertifikat p {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .tabel-sertifikat td {
+        display: block;
+        width: 100%;
+    }
+
+    .tabel-sertifikat tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
